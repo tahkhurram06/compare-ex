@@ -1,4 +1,4 @@
-import { useState, useMemo, useEffect } from "react";
+import { useState, useMemo } from "react";
 import CircuitBackground from "./components/background/CircuitBackground";
 import Nav from "./components/layout/Nav";
 import Footer from "./components/layout/Footer";
@@ -8,6 +8,7 @@ import CatalogControls from "./components/home/CatalogControls";
 import PhoneGrid from "./components/catalog/PhoneGrid";
 import PhoneDetail from "./components/catalog/PhoneDetail";
 import CompareTable from "./components/compare/CompareTable";
+import ComparePrompt from "./components/compare/ComparePrompt";
 import CompareTray from "./components/compare/CompareTray";
 import ImageLightbox from "./components/ui/ImageLightbox";
 import phonesData from "./data/phones.json";
@@ -29,6 +30,7 @@ function App() {
     "comparex:compareIds",
     [],
   );
+  const [savedIds, setSavedIds] = useLocalStorageState("comparex:savedIds", []);
   const [showCompareView, setShowCompareView] = useState(false);
   const [sortBy, setSortBy] = useState("default");
   const [priceRange, setPriceRange] = useState(PRICE_BOUNDS);
@@ -50,6 +52,18 @@ function App() {
     setCompareIds((ids) => ids.filter((existing) => existing !== id));
   };
 
+  const toggleSaved = (phone) => {
+    setSavedIds((ids) =>
+      ids.includes(phone.id)
+        ? ids.filter((id) => id !== phone.id)
+        : [...ids, phone.id],
+    );
+  };
+
+  const removeFromSaved = (id) => {
+    setSavedIds((ids) => ids.filter((existing) => existing !== id));
+  };
+
   // Compare selections persist in localStorage but the underlying catalog
   // doesn't change, so silently drop any id that no longer resolves to a
   // phone rather than rendering a broken comparison.
@@ -61,12 +75,13 @@ function App() {
     [compareIds],
   );
 
-  // If a removal drops us below 2 phones, kick back to the catalog instead
-  // of leaving showCompareView stuck true (which would silently re-enter
-  // the compare table the next time a second phone gets added).
-  useEffect(() => {
-    if (comparePhones.length < 2) setShowCompareView(false);
-  }, [comparePhones.length]);
+  // Same resilience as comparePhones above: drop any saved id that no
+  // longer resolves to a catalog phone instead of rendering a broken row.
+  const savedPhones = useMemo(
+    () =>
+      savedIds.map((id) => phonesData.find((p) => p.id === id)).filter(Boolean),
+    [savedIds],
+  );
 
   const filteredPhones = useMemo(() => {
     let result = phonesData;
@@ -124,10 +139,14 @@ function App() {
           onSearchChange={handleSearchChange}
           phones={phonesData}
           onSelectPhone={setSelectedPhone}
+          compareCount={comparePhones.length}
+          onCompareClick={() => setShowCompareView(true)}
+          savedPhones={savedPhones}
+          onRemoveSaved={removeFromSaved}
         />
 
         <main className="main-content">
-          {showCompareView && comparePhones.length >= 2 ? (
+          {showCompareView ? (
             <div className="detail-page">
               <button
                 type="button"
@@ -136,10 +155,14 @@ function App() {
               >
                 ← Back to catalog
               </button>
-              <CompareTable
-                phones={comparePhones}
-                onRemove={removeFromCompare}
-              />
+              {comparePhones.length >= 2 ? (
+                <CompareTable
+                  phones={comparePhones}
+                  onRemove={removeFromCompare}
+                />
+              ) : (
+                <ComparePrompt onBrowse={() => setShowCompareView(false)} />
+              )}
             </div>
           ) : selectedPhone ? (
             <PhoneDetail
@@ -177,6 +200,8 @@ function App() {
                   onSuggestionClick={handleSearchChange}
                   compareIds={compareIds}
                   onToggleCompare={toggleCompare}
+                  savedIds={savedIds}
+                  onToggleSave={toggleSaved}
                 />
               </section>
             </>

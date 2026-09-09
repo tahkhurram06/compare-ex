@@ -855,6 +855,47 @@
   backdrop-filter: blur(2px);
 }
 
+.save-btn {
+  width: 28px;
+  height: 28px;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  color: var(--text-dim);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.save-btn:hover {
+  border-color: var(--accent-2);
+  color: var(--accent-2);
+  transform: scale(1.1);
+}
+
+.save-btn.active {
+  color: #ff5c7a;
+  border-color: rgba(255, 92, 122, 0.5);
+}
+
+@media (hover: none) {
+  .save-btn {
+    width: 32px;
+    height: 32px;
+  }
+}
+
+.card-save-btn {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  z-index: 3;
+  background: rgba(10, 11, 13, 0.6);
+  backdrop-filter: blur(2px);
+}
+
 .card-name {
   font-weight: 700;
   font-size: 15px;
@@ -2348,6 +2389,13 @@
   font-size: 13px;
 }
 
+.phone-card.compact .card-save-btn {
+  width: 24px;
+  height: 24px;
+  top: 8px;
+  right: 8px;
+}
+
 .phone-card.compact .view-details-chip {
   display: none;
 }
@@ -2392,4 +2440,188 @@
 .phone-card.compact .badge {
   font-size: 10px;
   padding: 2px 6px;
+}
+
+/* ============================================
+   Nav "Compare" link — live count + tray pulse
+   ============================================ */
+
+.nav-compare-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.nav-compare-link.ready {
+  color: var(--accent-2);
+}
+
+.nav-compare-count {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 16px;
+  height: 16px;
+  padding: 0 4px;
+  border-radius: 100px;
+  background: var(--accent-bg);
+  border: 1px solid var(--accent-border);
+  color: var(--accent);
+  font-family: var(--mono);
+  font-size: 10px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+/* ============================================
+   Saved phones — nav dropdown
+   ============================================ */
+
+.saved-dropdown-wrap {
+  position: relative;
+  display: inline-flex;
+}
+
+.saved-link {
+  border: none;
+  background: transparent;
+  padding: 0;
+  font-family: inherit;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.saved-dropdown {
+  position: absolute;
+  top: calc(100% + 18px);
+  right: -8px;
+  width: min(320px, 80vw);
+  background: #16181d;
+  border: 1px solid var(--border-bright);
+  border-radius: 14px;
+  padding: 6px;
+  box-shadow: 0 24px 48px -16px rgba(0, 0, 0, 0.65);
+  z-index: 50;
+  max-height: 380px;
+  overflow-y: auto;
+}
+
+.saved-item {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.saved-item + .saved-item {
+  margin-top: 2px;
+}
+
+.saved-item-btn {
+  padding-right: 30px;
+}
+
+.saved-item-remove {
+  position: absolute;
+  right: 6px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  padding: 0;
+  border: none;
+  border-radius: 50%;
+  background: var(--border);
+  color: var(--text-dim);
+  font-size: 9px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.saved-item-remove:hover {
+  background: var(--border-bright);
+  color: var(--text);
+}
+
+.saved-dropdown-empty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding: 28px 14px;
+  text-align: center;
+  font-size: 13px;
+  color: var(--text-dim);
+}
+
+.saved-dropdown-browse {
+  font-family: var(--mono);
+  font-weight: 700;
+  font-size: 11px;
+  letter-spacing: 0.3px;
+  color: #0a0b0d;
+  background: var(--accent);
+  border: none;
+  border-radius: 100px;
+  padding: 8px 18px;
+  cursor: pointer;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.saved-dropdown-browse:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 18px -4px rgba(200, 255, 77, 0.5);
+}
+
+/* ============================================
+   Compare page — empty state when fewer than
+   2 phones are selected
+   ============================================ */
+
+.compare-prompt {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+  padding: 70px 20px;
+  color: var(--text-dim);
+  text-align: center;
+}
+
+.compare-prompt svg {
+  opacity: 0.5;
+}
+
+.compare-prompt p {
+  font-size: 15px;
+  max-width: 340px;
+}
+
+.compare-prompt-browse {
+  font-family: var(--mono);
+  font-weight: 700;
+  font-size: 12px;
+  letter-spacing: 0.3px;
+  color: #0a0b0d;
+  background: var(--accent);
+  border: none;
+  border-radius: 100px;
+  padding: 10px 22px;
+  cursor: pointer;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.compare-prompt-browse:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 18px -4px rgba(200, 255, 77, 0.5);
+}
+
+.compare-prompt-browse:active {
+  transform: translateY(0) scale(0.97);
 }

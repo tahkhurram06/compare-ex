@@ -41,6 +41,8 @@ function PhoneGrid({
   onSuggestionClick,
   compareIds,
   onToggleCompare,
+  savedIds,
+  onToggleSave,
 }) {
   const cardRefs = useRef([]);
   const isMobile = useIsMobile(760);
@@ -105,6 +107,8 @@ function PhoneGrid({
                     isComparing={compareIds?.includes(phone.id)}
                     compareFull={compareIds?.length >= 3}
                     onToggleCompare={onToggleCompare}
+                    isSaved={savedIds?.includes(phone.id)}
+                    onToggleSave={onToggleSave}
                     compact
                   />
                 </div>
@@ -127,6 +131,8 @@ function PhoneGrid({
             isComparing={compareIds?.includes(phone.id)}
             compareFull={compareIds?.length >= 3}
             onToggleCompare={onToggleCompare}
+            isSaved={savedIds?.includes(phone.id)}
+            onToggleSave={onToggleSave}
             cardRef={(el) => (cardRefs.current[index] = el)}
           />
         </div>
