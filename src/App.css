@@ -2254,3 +2254,142 @@
   line-height: 1.55;
   color: var(--text);
 }
+
+/* ============================================
+   Mobile brand sliders (replaces the grid at
+   <=760px — one horizontal rail per brand)
+   ============================================ */
+
+.brand-sliders {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.brand-slider {
+  opacity: 0;
+  animation: fade-slide-up 0.5s ease-out forwards;
+}
+
+.brand-slider-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.brand-slider-header h3 {
+  font-family: var(--mono);
+  font-size: 12px;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  color: var(--text);
+  font-weight: 700;
+  margin: 0;
+}
+
+.brand-slider-count {
+  font-family: var(--mono);
+  font-size: 11px;
+  color: var(--text-dim);
+  white-space: nowrap;
+}
+
+.brand-slider-track {
+  display: flex;
+  gap: 12px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  margin: 0 -24px;
+  padding: 4px 24px 10px;
+  scrollbar-width: none;
+}
+
+.brand-slider-track::-webkit-scrollbar {
+  display: none;
+}
+
+.brand-slider-item {
+  flex: 0 0 148px;
+  scroll-snap-align: start;
+}
+
+@media (max-width: 480px) {
+  .brand-slider-track {
+    margin: 0 -16px;
+    padding: 4px 16px 10px;
+  }
+}
+
+/* Compact card variant used inside the brand rails — smaller footprint,
+   trimmed spec rows, like a typical mobile shopping-app product card. */
+.phone-card.compact {
+  padding: 10px;
+  border-radius: 12px;
+}
+
+.phone-card.compact:hover {
+  transform: none;
+}
+
+.phone-card.compact .card-media {
+  height: 96px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+}
+
+.phone-card.compact .card-compare-btn {
+  width: 24px;
+  height: 24px;
+  top: 8px;
+  left: 8px;
+  font-size: 13px;
+}
+
+.phone-card.compact .view-details-chip {
+  display: none;
+}
+
+.phone-card.compact .color-dots {
+  gap: 5px;
+  margin-bottom: 8px;
+}
+
+.phone-card.compact .color-dot {
+  width: 10px;
+  height: 10px;
+  border-width: 1.5px;
+}
+
+.phone-card.compact .card-name {
+  font-size: 12.5px;
+  margin-bottom: 1px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.phone-card.compact .card-brand {
+  font-size: 9.5px;
+  margin-bottom: 8px;
+}
+
+.phone-card.compact .spec-mini {
+  display: none;
+}
+
+.phone-card.compact .card-price {
+  margin-top: 8px;
+  padding-top: 8px;
+}
+
+.phone-card.compact .card-price .price {
+  font-size: 13px;
+}
+
+.phone-card.compact .badge {
+  font-size: 10px;
+  padding: 2px 6px;
+}
