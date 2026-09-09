@@ -260,7 +260,10 @@ function Nav({
                   <button
                     type="button"
                     className="saved-dropdown-browse"
-                    onClick={() => setIsSavedOpen(false)}
+                    onClick={() => {
+                      onBrowseClick?.();
+                      setIsSavedOpen(false);
+                    }}
                   >
                     Browse phones
                   </button>

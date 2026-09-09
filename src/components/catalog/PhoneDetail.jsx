@@ -45,9 +45,6 @@ function PhoneDetail({ phone, onBack, onImageClick }) {
   const selectedPrice = selectedStorage?.price ?? phone.price;
 
   const activeColor = colors[activeIndex];
-  const heroSrc = activeColor
-    ? getPhoneImage(activeColor.heroImage || activeColor.image)
-    : null;
 
   return (
     <div className="detail-page">
@@ -60,7 +57,7 @@ function PhoneDetail({ phone, onBack, onImageClick }) {
           onMouseEnter={() => setIsPaused(true)}
           onMouseLeave={() => setIsPaused(false)}
         >
-          {heroSrc ? (
+          {hasColors ? (
             <div
               className="detail-thumb-wrap"
               onClick={() =>
@@ -72,12 +69,15 @@ function PhoneDetail({ phone, onBack, onImageClick }) {
                 })
               }
             >
-              <img
-                key={activeColor.heroImage || activeColor.image}
-                src={heroSrc}
-                alt={`${phone.name} in ${activeColor.name}`}
-                className="detail-thumb detail-thumb-img"
-              />
+              {colors.map((color, i) => (
+                <img
+                  key={color.heroImage || color.image}
+                  src={getPhoneImage(color.heroImage || color.image)}
+                  alt={`${phone.name} in ${color.name}`}
+                  className={`detail-thumb-img ${i === activeIndex ? "is-active" : ""}`}
+                  loading={i === 0 ? "eager" : "lazy"}
+                />
+              ))}
               <div className="media-hover-hint">View image</div>
             </div>
           ) : (
