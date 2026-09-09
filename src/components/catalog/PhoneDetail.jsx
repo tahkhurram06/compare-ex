@@ -1,32 +1,53 @@
-import { useState } from 'react'
-import Badge from '../ui/Badge'
-import { getPhoneImage } from '../../utils/phoneImages'
-import { getStorageOptions, formatStorageOption, formatStorageOptions } from '../../utils/format'
-import { useColorRotation } from '../../hooks/useColorRotation'
+import { useEffect, useState } from "react";
+import Badge from "../ui/Badge";
+import { getPhoneImage } from "../../utils/phoneImages";
+import {
+  getStorageOptions,
+  formatStorageOption,
+  formatStorageOptions,
+} from "../../utils/format";
+import { useColorRotation } from "../../hooks/useColorRotation";
 
 const SPECS = [
-  { key: 'display', label: 'Display' },
-  { key: 'chipset', label: 'Chipset' },
-  { key: 'storageOptions', label: 'Storage (RAM / ROM)', format: formatStorageOptions },
-  { key: 'battery', label: 'Battery', suffix: ' mAh' },
-  { key: 'camera', label: 'Main Camera' },
-  { key: 'weight', label: 'Weight', suffix: 'g' },
-  { key: 'category', label: 'Category' },
-]
+  { key: "display", label: "Display" },
+  { key: "chipset", label: "Chipset" },
+  {
+    key: "storageOptions",
+    label: "Storage (RAM / ROM)",
+    format: formatStorageOptions,
+  },
+  { key: "battery", label: "Battery", suffix: " mAh" },
+  { key: "camera", label: "Main Camera" },
+  { key: "weight", label: "Weight", suffix: "g" },
+  { key: "category", label: "Category" },
+];
 
 function PhoneDetail({ phone, onBack, onImageClick }) {
-  const colors = phone.colors || []
-  const hasColors = colors.length > 0
-  const { activeIndex, goToColor, setIsPaused } = useColorRotation(colors.length, phone.id)
-  const [selectedStorageIndex, setSelectedStorageIndex] = useState(0)
-  const storageOptions = getStorageOptions(phone)
-  const selectedStorage = storageOptions[selectedStorageIndex] || storageOptions[0]
-  const selectedPrice = selectedStorage?.price ?? phone.price
+  const colors = phone.colors || [];
+  const hasColors = colors.length > 0;
+  const { activeIndex, goToColor, setIsPaused } = useColorRotation(
+    colors.length,
+    phone.id,
+  );
+  const [selectedStorageIndex, setSelectedStorageIndex] = useState(0);
 
-  const activeColor = colors[activeIndex]
+  // PhoneDetail doesn't remount when the user jumps straight from one
+  // phone's detail page to another's (e.g. via a nav search suggestion),
+  // so without this the previous phone's storage selection would carry
+  // over and could point past the new phone's option list.
+  useEffect(() => {
+    setSelectedStorageIndex(0);
+  }, [phone.id]);
+
+  const storageOptions = getStorageOptions(phone);
+  const selectedStorage =
+    storageOptions[selectedStorageIndex] || storageOptions[0];
+  const selectedPrice = selectedStorage?.price ?? phone.price;
+
+  const activeColor = colors[activeIndex];
   const heroSrc = activeColor
     ? getPhoneImage(activeColor.heroImage || activeColor.image)
-    : null
+    : null;
 
   return (
     <div className="detail-page">
@@ -43,7 +64,12 @@ function PhoneDetail({ phone, onBack, onImageClick }) {
             <div
               className="detail-thumb-wrap"
               onClick={() =>
-                onImageClick?.({ phone, colors, initialIndex: activeIndex, imageKey: 'heroImage' })
+                onImageClick?.({
+                  phone,
+                  colors,
+                  initialIndex: activeIndex,
+                  imageKey: "heroImage",
+                })
               }
             >
               <img
@@ -64,8 +90,10 @@ function PhoneDetail({ phone, onBack, onImageClick }) {
                 <button
                   key={color.image}
                   type="button"
-                  className={`color-dot ${i === activeIndex ? 'active' : ''}`}
-                  style={{ backgroundImage: `url(${getPhoneImage(color.image)})` }}
+                  className={`color-dot ${i === activeIndex ? "active" : ""}`}
+                  style={{
+                    backgroundImage: `url(${getPhoneImage(color.image)})`,
+                  }}
                   onClick={() => goToColor(i)}
                   aria-label={`View ${phone.name} in ${color.name}`}
                   title={color.name}
@@ -78,7 +106,9 @@ function PhoneDetail({ phone, onBack, onImageClick }) {
         <div className="detail-info">
           <span className="detail-brand">{phone.brand}</span>
           <h1 className="detail-name">{phone.name}</h1>
-          {activeColor && <span className="detail-color-name">{activeColor.name}</span>}
+          {activeColor && (
+            <span className="detail-color-name">{activeColor.name}</span>
+          )}
 
           <div className="detail-meta">
             <span className="detail-price">${selectedPrice}</span>
@@ -92,12 +122,16 @@ function PhoneDetail({ phone, onBack, onImageClick }) {
           {storageOptions.length > 1 && (
             <div className="variant-picker">
               <span className="variant-picker-label">Choose storage</span>
-              <div className="variant-options" role="group" aria-label={`${phone.name} storage options`}>
+              <div
+                className="variant-options"
+                role="group"
+                aria-label={`${phone.name} storage options`}
+              >
                 {storageOptions.map((option, index) => (
                   <button
                     key={`${option.ram}-${option.storage}`}
                     type="button"
-                    className={`variant-chip ${index === selectedStorageIndex ? 'active' : ''}`}
+                    className={`variant-chip ${index === selectedStorageIndex ? "active" : ""}`}
                     onClick={() => setSelectedStorageIndex(index)}
                     aria-pressed={index === selectedStorageIndex}
                   >
@@ -106,7 +140,9 @@ function PhoneDetail({ phone, onBack, onImageClick }) {
                 ))}
               </div>
               <span className="variant-price-note">
-                {selectedStorage?.price ? `$${selectedStorage.price} for selected configuration` : 'Price varies by configuration'}
+                {selectedStorage?.price
+                  ? `$${selectedStorage.price} for selected configuration`
+                  : "Price varies by configuration"}
               </span>
             </div>
           )}
@@ -119,13 +155,13 @@ function PhoneDetail({ phone, onBack, onImageClick }) {
             <span className="detail-spec-label">{spec.label}</span>
             <span className="detail-spec-value">
               {spec.format ? spec.format(phone) : phone[spec.key]}
-              {spec.suffix || ''}
+              {spec.suffix || ""}
             </span>
           </div>
         ))}
       </div>
     </div>
-  )
+  );
 }
 
-export default PhoneDetail
+export default PhoneDetail;
