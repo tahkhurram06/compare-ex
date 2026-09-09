@@ -64,6 +64,22 @@ function App() {
     setSavedIds((ids) => ids.filter((existing) => existing !== id));
   };
 
+  // From the lightbox: land on that phone's detail page, then jump straight
+  // to its description (falling back to the specs block for phones without
+  // one) rather than leaving the person at the top of a tall hero section.
+  const handleViewDescription = (phone) => {
+    setLightboxData(null);
+    setSelectedPhone(phone);
+    requestAnimationFrame(() => {
+      requestAnimationFrame(() => {
+        const target =
+          document.getElementById("phone-description") ||
+          document.getElementById("phone-specs");
+        target?.scrollIntoView({ behavior: "smooth", block: "start" });
+      });
+    });
+  };
+
   // Compare selections persist in localStorage but the underlying catalog
   // doesn't change, so silently drop any id that no longer resolves to a
   // phone rather than rendering a broken comparison.
@@ -225,6 +241,7 @@ function App() {
         initialIndex={lightboxData?.initialIndex}
         imageKey={lightboxData?.imageKey}
         onClose={() => setLightboxData(null)}
+        onViewDescription={handleViewDescription}
       />
     </>
   );

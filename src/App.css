@@ -2102,6 +2102,43 @@
   transform: rotate(90deg);
 }
 
+.lightbox-description-btn {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  background: var(--accent);
+  color: #0a0b0d;
+  font-family: var(--mono);
+  font-weight: 700;
+  font-size: 12px;
+  letter-spacing: 0.3px;
+  padding: 9px 18px;
+  border: none;
+  border-radius: 100px;
+  box-shadow: 0 4px 14px -4px rgba(200, 255, 77, 0.5);
+  cursor: pointer;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.lightbox-description-btn:hover {
+  transform: translateY(-1px) scale(1.03);
+  box-shadow: 0 6px 18px -4px rgba(200, 255, 77, 0.7);
+}
+
+.lightbox-description-btn:active {
+  transform: translateY(0) scale(0.97);
+}
+
+.lightbox-description-btn .chip-arrow {
+  transition: transform 0.2s ease;
+}
+
+.lightbox-description-btn:hover .chip-arrow {
+  transform: translateX(2px);
+}
+
 @media (max-width: 560px) {
   .lightbox-overlay {
     padding: 20px;

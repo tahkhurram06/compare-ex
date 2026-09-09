@@ -116,7 +116,9 @@ function PhoneDetail({ phone, onBack, onImageClick }) {
           </div>
 
           {phone.description && (
-            <p className="detail-description">{phone.description}</p>
+            <p className="detail-description" id="phone-description">
+              {phone.description}
+            </p>
           )}
 
           {storageOptions.length > 1 && (
@@ -149,7 +151,7 @@ function PhoneDetail({ phone, onBack, onImageClick }) {
         </div>
       </div>
 
-      <div className="detail-specs">
+      <div className="detail-specs" id="phone-specs">
         {SPECS.map((spec) => (
           <div className="detail-spec" key={spec.key}>
             <span className="detail-spec-label">{spec.label}</span>
