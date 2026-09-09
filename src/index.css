@@ -1,0 +1,70 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+img,
+svg {
+  max-width: 100%;
+  display: block;
+}
+
+:root {
+  --bg: #0a0b0d;
+  --bg-elevated: #131519;
+  --bg-card: #17191e;
+  --border: #2a2d34;
+  --border-bright: #3d4148;
+  --text: #f2f3f5;
+  --text-dim: #8b8f98;
+  --accent: #c8ff4d;
+  --accent-2: #4dd8ff;
+  --accent-bg: rgba(200, 255, 77, 0.1);
+  --accent-border: rgba(200, 255, 77, 0.5);
+
+  --mono: 'Space Mono', ui-monospace, Consolas, monospace;
+  --display: 'Sora', system-ui, 'Segoe UI', Roboto, sans-serif;
+
+  font: 16px/145% var(--display);
+  letter-spacing: 0.1px;
+  color-scheme: dark;
+  color: var(--text);
+  background: var(--bg);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  overflow-x: hidden;
+}
+
+#root {
+  min-height: 100svh;
+}
+
+h1, h2 {
+  font-family: var(--display);
+  color: var(--text);
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+button {
+  font-family: inherit;
+  -webkit-tap-highlight-color: transparent;
+}
+
+a {
+  color: inherit;
+}
