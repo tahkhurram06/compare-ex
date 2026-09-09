@@ -1,4 +1,4 @@
-import { useState, useMemo } from "react";
+import { useState, useMemo, useEffect } from "react";
 import CircuitBackground from "./components/background/CircuitBackground";
 import Nav from "./components/layout/Nav";
 import Footer from "./components/layout/Footer";
@@ -25,7 +25,10 @@ function App() {
   const [searchQuery, setSearchQuery] = useState("");
   const [selectedPhone, setSelectedPhone] = useState(null);
   const [lightboxData, setLightboxData] = useState(null);
-  const [compareIds, setCompareIds] = useLocalStorageState("comparex:compareIds", []);
+  const [compareIds, setCompareIds] = useLocalStorageState(
+    "comparex:compareIds",
+    [],
+  );
   const [showCompareView, setShowCompareView] = useState(false);
   const [sortBy, setSortBy] = useState("default");
   const [priceRange, setPriceRange] = useState(PRICE_BOUNDS);
@@ -51,9 +54,19 @@ function App() {
   // doesn't change, so silently drop any id that no longer resolves to a
   // phone rather than rendering a broken comparison.
   const comparePhones = useMemo(
-    () => compareIds.map((id) => phonesData.find((p) => p.id === id)).filter(Boolean),
-    [compareIds]
+    () =>
+      compareIds
+        .map((id) => phonesData.find((p) => p.id === id))
+        .filter(Boolean),
+    [compareIds],
   );
+
+  // If a removal drops us below 2 phones, kick back to the catalog instead
+  // of leaving showCompareView stuck true (which would silently re-enter
+  // the compare table the next time a second phone gets added).
+  useEffect(() => {
+    if (comparePhones.length < 2) setShowCompareView(false);
+  }, [comparePhones.length]);
 
   const filteredPhones = useMemo(() => {
     let result = phonesData;
@@ -73,9 +86,10 @@ function App() {
           p.chipset.toLowerCase().includes(query) ||
           p.category.toLowerCase().includes(query) ||
           (p.storageOptions || []).some(({ ram, storage }) => {
-            const capacity = storage >= 1024 ? `${storage / 1024}tb` : `${storage}gb`
-            return `${ram}/${capacity}`.includes(query)
-          })
+            const capacity =
+              storage >= 1024 ? `${storage / 1024}tb` : `${storage}gb`;
+            return `${ram}/${capacity}`.includes(query);
+          }),
       );
     }
 
@@ -91,10 +105,13 @@ function App() {
   }, [activeFilter, searchQuery, sortBy, priceRange]);
 
   const searchSuggestion = useMemo(() => {
-    if (filteredPhones.length > 0 || !searchQuery.trim()) return null
-    const base = activeFilter === "all" ? phonesData : phonesData.filter((p) => p.brand === activeFilter)
-    const match = findClosestPhoneName(searchQuery, base)
-    return match?.name || null
+    if (filteredPhones.length > 0 || !searchQuery.trim()) return null;
+    const base =
+      activeFilter === "all"
+        ? phonesData
+        : phonesData.filter((p) => p.brand === activeFilter);
+    const match = findClosestPhoneName(searchQuery, base);
+    return match?.name || null;
   }, [filteredPhones.length, searchQuery, activeFilter]);
 
   return (
@@ -119,7 +136,10 @@ function App() {
               >
                 ← Back to catalog
               </button>
-              <CompareTable phones={comparePhones} onRemove={removeFromCompare} />
+              <CompareTable
+                phones={comparePhones}
+                onRemove={removeFromCompare}
+              />
             </div>
           ) : selectedPhone ? (
             <PhoneDetail
@@ -136,7 +156,11 @@ function App() {
                   <h2>Browse Catalog</h2>
                   <span className="count">{filteredPhones.length} phones</span>
                 </div>
-                <FilterPills active={activeFilter} onChange={setActiveFilter} phones={phonesData} />
+                <FilterPills
+                  active={activeFilter}
+                  onChange={setActiveFilter}
+                  phones={phonesData}
+                />
                 <CatalogControls
                   sortBy={sortBy}
                   onSortChange={setSortBy}
