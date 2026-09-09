@@ -35,6 +35,13 @@ function App() {
   const [sortBy, setSortBy] = useState("default");
   const [priceRange, setPriceRange] = useState(PRICE_BOUNDS);
 
+  const isHome = !showCompareView && !selectedPhone;
+
+  const goHome = () => {
+    setShowCompareView(false);
+    setSelectedPhone(null);
+  };
+
   const handleSearchChange = (value) => {
     setSearchQuery(value);
     if (value.trim()) setSelectedPhone(null);
@@ -159,6 +166,8 @@ function App() {
           onCompareClick={() => setShowCompareView(true)}
           savedPhones={savedPhones}
           onRemoveSaved={removeFromSaved}
+          isHome={isHome}
+          onBrowseClick={goHome}
         />
 
         <main className="main-content">
@@ -227,7 +236,7 @@ function App() {
         <Footer />
       </div>
 
-      {!showCompareView && (
+      {isHome && (
         <CompareTray
           phones={comparePhones}
           onRemove={removeFromCompare}

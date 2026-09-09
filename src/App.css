@@ -228,6 +228,8 @@
 
 .nav-links {
   display: flex;
+  flex-wrap: wrap;
+  row-gap: 6px;
   gap: 20px;
 
   font-size: 13px;
@@ -303,8 +305,27 @@
 }
 
 @media (max-width: 360px) {
-  .nav-links a:not(.active) {
+  .nav-links a:not(.active):not(.ready) {
     display: none;
+  }
+}
+
+@media (max-width: 340px) {
+  .nav {
+    padding: 8px 12px;
+    gap: 8px;
+  }
+  .nav-logo {
+    font-size: 13px;
+    gap: 6px;
+  }
+  .nav-links {
+    gap: 10px;
+    font-size: 11px;
+  }
+  .saved-dropdown {
+    width: min(260px, 88vw);
+    right: -4px;
   }
 }
 
@@ -384,6 +405,16 @@
   }
   .hero-sub {
     font-size: 14px;
+  }
+}
+
+@media (max-width: 340px) {
+  .hero-section h1 {
+    letter-spacing: -0.5px;
+  }
+  .eyebrow {
+    font-size: 11px;
+    letter-spacing: 1.5px;
   }
 }
 
@@ -488,6 +519,13 @@
   .pill {
     padding: 7px 12px;
     font-size: 11px;
+  }
+}
+
+@media (max-width: 340px) {
+  .pill {
+    padding: 6px 10px;
+    font-size: 10px;
   }
 }
 
@@ -2398,6 +2436,12 @@
   .brand-slider-track {
     margin: 0 -16px;
     padding: 4px 16px 10px;
+  }
+}
+
+@media (max-width: 340px) {
+  .brand-slider-item {
+    flex-basis: 132px;
   }
 }
 

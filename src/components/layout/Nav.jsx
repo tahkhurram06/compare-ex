@@ -26,6 +26,8 @@ function Nav({
   onCompareClick,
   savedPhones = [],
   onRemoveSaved,
+  isHome = true,
+  onBrowseClick,
 }) {
   const [isOpen, setIsOpen] = useState(false);
   const [highlightedIndex, setHighlightedIndex] = useState(-1);
@@ -178,7 +180,14 @@ function Nav({
       </div>
 
       <nav className="nav-links">
-        <a href="#browse" className="active">
+        <a
+          href="#browse"
+          className={isHome ? "active" : ""}
+          onClick={(e) => {
+            e.preventDefault();
+            onBrowseClick?.();
+          }}
+        >
           Browse
         </a>
         <a
