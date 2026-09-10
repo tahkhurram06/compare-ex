@@ -2713,3 +2713,24 @@
 .compare-prompt-browse:active {
   transform: translateY(0) scale(0.97);
 }
+.price-filter-inputs {
+  position: relative;
+  height: 24px;
+}
+
+.price-filter-inputs input[type="range"] {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  margin: 0;
+  pointer-events: none; /* let clicks pass through to whichever thumb is on top */
+}
+
+.price-filter-inputs input[type="range"]::-webkit-slider-thumb {
+  pointer-events: auto; /* re-enable dragging on the actual thumb */
+}
+
+.price-filter-inputs input[type="range"]::-moz-range-thumb {
+  pointer-events: auto;
+}
