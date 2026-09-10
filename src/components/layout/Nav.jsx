@@ -27,6 +27,7 @@ function Nav({
   savedPhones = [],
   onRemoveSaved,
   isHome = true,
+  isCompareView = false,
   onBrowseClick,
 }) {
   const [isOpen, setIsOpen] = useState(false);
@@ -192,7 +193,7 @@ function Nav({
         </a>
         <a
           href="#compare"
-          className={`nav-compare-link ${compareCount >= 2 ? "ready" : ""}`}
+          className={`nav-compare-link ${compareCount >= 2 ? "ready" : ""} ${isCompareView ? "active" : ""}`}
           onClick={(e) => {
             e.preventDefault();
             onCompareClick?.();

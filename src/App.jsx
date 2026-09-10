@@ -175,6 +175,7 @@ function App() {
           savedPhones={savedPhones}
           onRemoveSaved={removeFromSaved}
           isHome={isHome}
+          isCompareView={showCompareView}
           onBrowseClick={goHome}
         />
 
