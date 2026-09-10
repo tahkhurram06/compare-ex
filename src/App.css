@@ -2734,3 +2734,8 @@
 .price-filter-inputs input[type="range"]::-moz-range-thumb {
   pointer-events: auto;
 }
+.saved-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}

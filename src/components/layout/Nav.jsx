@@ -208,8 +208,23 @@ function Nav({
             onClick={() => setIsSavedOpen((o) => !o)}
             aria-expanded={isSavedOpen}
             aria-controls="saved-dropdown"
+            aria-label={
+              savedPhones.length > 0
+                ? `Saved phones (${savedPhones.length})`
+                : "Saved phones"
+            }
+            title="Saved"
           >
-            Saved
+            <svg
+              width="16"
+              height="16"
+              viewBox="0 0 24 24"
+              fill={savedPhones.length > 0 ? "currentColor" : "none"}
+              stroke="currentColor"
+              strokeWidth="2"
+            >
+              <path d="M12 21s-6.9-4.35-9.3-8.2C.9 9.9 1.5 6.2 4.6 4.7c2.3-1.1 4.9-.3 6.1 1.5L12 7.8l1.3-1.6c1.2-1.8 3.8-2.6 6.1-1.5 3.1 1.5 3.7 5.2 1.9 8.1C18.9 16.65 12 21 12 21z" />
+            </svg>
             {savedPhones.length > 0 && (
               <span className="nav-compare-count">{savedPhones.length}</span>
             )}
