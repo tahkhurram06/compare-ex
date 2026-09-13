@@ -620,6 +620,9 @@
   border-radius: 14px;
   padding: 20px;
   cursor: pointer;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
   transition:
     border-color 0.25s ease,
     transform 0.25s ease,
@@ -969,8 +972,14 @@
   min-width: 0;
 }
 
+.card-body {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
 .card-price {
-  margin-top: 14px;
+  margin-top: auto;
   padding-top: 14px;
   border-top: 1px solid var(--border);
   display: flex;
@@ -2583,7 +2592,7 @@
 }
 
 .phone-card.compact .card-price {
-  margin-top: 8px;
+  margin-top: auto;
   padding-top: 8px;
 }
 

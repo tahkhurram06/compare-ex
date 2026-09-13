@@ -805,6 +805,42 @@
     ]
   },
   {
+    "id": "z-trifold",
+    "name": "Galaxy Z TriFold",
+    "brand": "Samsung",
+    "price": 2899,
+    "rating": 4.7,
+    "display": "10\" tri-foldable Dynamic AMOLED 2X + 6.5\" cover display, 120Hz",
+    "chipset": "Snapdragon 8 Elite for Galaxy",
+    "ram": 16,
+    "storage": 512,
+    "storageOptions": [
+      {
+        "ram": 16,
+        "storage": 512,
+        "price": 2899
+      },
+      {
+        "ram": 16,
+        "storage": 1024,
+        "price": 3099
+      }
+    ],
+    "battery": 5600,
+    "camera": "200MP + 12MP Ultra Wide + 10MP Tele (3x)",
+    "weight": 309,
+    "category": "foldable",
+    "releaseDate": "December 12, 2025",
+    "description": "Samsung's first triple-folding phone — an ultra-thin 3.9mm profile that unfolds twice into a 10\" tablet-sized display, backed by the largest battery ever in a Samsung foldable. Available in 16/512GB and 16/1TB configurations. Released December 12, 2025.",
+    "colors": [
+      {
+        "name": "Crafted Black",
+        "image": "trifold.jpeg",
+        "heroImage": "trifold-all-views.jpeg"
+      }
+    ]
+  },
+  {
     "id": "iphone-17-pro-max",
     "name": "iPhone 17 Pro Max",
     "brand": "Apple",
