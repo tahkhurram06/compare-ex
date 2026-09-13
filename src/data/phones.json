@@ -560,6 +560,52 @@
     "releaseDate": "March 11, 2026"
   },
   {
+    "id": "iphone-17e",
+    "name": "iPhone 17e",
+    "brand": "Apple",
+    "price": 599,
+    "rating": 4.3,
+    "display": "6.1\" OLED, 60Hz",
+    "chipset": "Apple A19",
+    "ram": 6,
+    "storage": 128,
+    "storageOptions": [
+      {
+        "ram": 6,
+        "storage": 128,
+        "price": 599
+      },
+      {
+        "ram": 6,
+        "storage": 256,
+        "price": 699
+      }
+    ],
+    "battery": 3200,
+    "camera": "48MP",
+    "weight": 170,
+    "category": "budget",
+    "releaseDate": "March 11, 2026",
+    "description": "Apple's most affordable current iPhone — a single 48MP camera, the same A19 chip family, and a simpler 60Hz display to hit a lower price point. Available in 6/128GB and 6/256GB configurations. Released March 11, 2026.",
+    "colors": [
+      {
+        "name": "Black",
+        "image": "17e-black-back-only.png",
+        "heroImage": "17e-black-front-back-side.png"
+      },
+      {
+        "name": "Soft Pink",
+        "image": "17e-soft-pink-back-only.png",
+        "heroImage": "17e-soft-pink-front-back-side.png"
+      },
+      {
+        "name": "White",
+        "image": "17e-white-back-only.png",
+        "heroImage": "17e-white-front-back-side.png"
+      }
+    ]
+  },
+  {
     "id": "iphone-17-pro-max",
     "name": "iPhone 17 Pro Max",
     "brand": "Apple",
