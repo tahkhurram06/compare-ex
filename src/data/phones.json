@@ -525,6 +525,52 @@
     ]
   },
   {
+    "id": "z-flip-8",
+    "name": "Galaxy Z Flip 8",
+    "brand": "Samsung",
+    "price": 1099,
+    "rating": 4.6,
+    "display": "6.7\" foldable Dynamic AMOLED 2X + 4.1\" cover display, 120Hz",
+    "chipset": "Snapdragon 8 Elite Gen 5 / Exynos 2600",
+    "ram": 12,
+    "storage": 256,
+    "storageOptions": [
+      {
+        "ram": 12,
+        "storage": 256,
+        "price": 1099
+      },
+      {
+        "ram": 12,
+        "storage": 512,
+        "price": 1219
+      }
+    ],
+    "battery": 4300,
+    "camera": "50MP + 12MP Ultra Wide",
+    "weight": 188,
+    "category": "foldable",
+    "releaseDate": "July 22, 2026",
+    "description": "Samsung's compact clamshell foldable, with an oversized cover display for using apps without unfolding and a dual-camera system on the back. Available in 12/256GB and 12/512GB configurations. Released July 22, 2026.",
+    "colors": [
+      {
+        "name": "Cream",
+        "image": "flip8-cream.jpeg",
+        "heroImage": "flip8-cream-all.jpeg"
+      },
+      {
+        "name": "Graphite",
+        "image": "flip8-graphite.jpeg",
+        "heroImage": "flip8-graphite-all.jpeg"
+      },
+      {
+        "name": "Pink",
+        "image": "filp8-pink.jpeg",
+        "heroImage": "flip8-pink-all.jpeg"
+      }
+    ]
+  },
+  {
     "id": "galaxy-s26-ultra",
     "name": "Galaxy S26 Ultra",
     "brand": "Samsung",
