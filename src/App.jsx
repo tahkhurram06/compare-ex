@@ -126,7 +126,7 @@ function App() {
           (p.storageOptions || []).some(({ ram, storage }) => {
             const capacity =
               storage >= 1024 ? `${storage / 1024}tb` : `${storage}gb`;
-            const ramValue = ram.toLowerCase();
+            const ramValue = `${ram}gb`.toLowerCase();
             // Match whole tokens ("8" -> "8gb" ram, "512" -> "512gb" storage,
             // "8/512" -> combined) rather than a loose substring check, so a
             // search for "12" doesn't also match inside "512gb".
