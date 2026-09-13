@@ -10,20 +10,48 @@
     "ram": 8,
     "storage": 256,
     "storageOptions": [
-      { "ram": 8, "storage": 256, "price": 799 },
-      { "ram": 8, "storage": 512, "price": 899 }
+      {
+        "ram": 8,
+        "storage": 256,
+        "price": 799
+      },
+      {
+        "ram": 8,
+        "storage": 512,
+        "price": 899
+      }
     ],
     "battery": 3600,
     "camera": "48MP + 12MP Ultra Wide",
     "weight": 177,
     "category": "flagship",
-    "description": "The everyday flagship \u2014 a fast A19 chip, a smooth 120Hz display, and a dual-camera setup that covers the basics without the Pro price tag. Available in 8/256GB and 8/512GB configurations.",
+    "description": "The everyday flagship — a fast A19 chip, a smooth 120Hz display, and a dual-camera setup that covers the basics without the Pro price tag. Available in 8/256GB and 8/512GB configurations.",
     "colors": [
-      { "name": "White", "image": "iphone17-standard-back-corrected-white.png", "heroImage": "iphone17-white_2.png" },
-      { "name": "Black", "image": "iphone17-standard-back-corrected-black.png", "heroImage": "iphone17-black_2.png" },
-      { "name": "Mist Blue", "image": "iphone17-standard-back-corrected-mist-blue.png", "heroImage": "iphone17-mist-blue.png" },
-      { "name": "Sage", "image": "iphone17-standard-back-corrected-sage.png", "heroImage": "iphone17-sage.png" },
-      { "name": "Lavender", "image": "iphone17-standard-back-corrected-lavender.png", "heroImage": "iphone17-lavender.png" }
+      {
+        "name": "White",
+        "image": "iphone17-standard-back-corrected-white.png",
+        "heroImage": "iphone17-white_2.png"
+      },
+      {
+        "name": "Black",
+        "image": "iphone17-standard-back-corrected-black.png",
+        "heroImage": "iphone17-black_2.png"
+      },
+      {
+        "name": "Mist Blue",
+        "image": "iphone17-standard-back-corrected-mist-blue.png",
+        "heroImage": "iphone17-mist-blue.png"
+      },
+      {
+        "name": "Sage",
+        "image": "iphone17-standard-back-corrected-sage.png",
+        "heroImage": "iphone17-sage.png"
+      },
+      {
+        "name": "Lavender",
+        "image": "iphone17-standard-back-corrected-lavender.png",
+        "heroImage": "iphone17-lavender.png"
+      }
     ]
   },
   {
@@ -37,9 +65,21 @@
     "ram": 12,
     "storage": 256,
     "storageOptions": [
-      { "ram": 12, "storage": 256, "price": 999 },
-      { "ram": 12, "storage": 512, "price": 1199 },
-      { "ram": 12, "storage": 1024, "price": 1399 }
+      {
+        "ram": 12,
+        "storage": 256,
+        "price": 999
+      },
+      {
+        "ram": 12,
+        "storage": 512,
+        "price": 1199
+      },
+      {
+        "ram": 12,
+        "storage": 1024,
+        "price": 1399
+      }
     ],
     "battery": 2800,
     "camera": "48MP",
@@ -47,10 +87,26 @@
     "category": "flagship",
     "description": "Apple's thinnest iPhone yet, trading some battery capacity for a lighter, sleeker feel in the hand. Great if portability matters more than raw endurance. Available in 12/256GB, 12/512GB, and 12/1TB configurations.",
     "colors": [
-      { "name": "Cloud White", "image": "iphone17-air-back-cloud-white.png", "heroImage": "iphone17-air-cloud-white.png" },
-      { "name": "Light Gold", "image": "iphone17-air-back-light-gold.png", "heroImage": "iphone17-air-light-gold.png" },
-      { "name": "Sky Blue", "image": "iphone17-air-back-sky-blue.png", "heroImage": "iphone17-air-sky-blue.png" },
-      { "name": "Space Black", "image": "iphone17-air-back-space-black.png", "heroImage": "iphone17-air-space-black.png" }
+      {
+        "name": "Cloud White",
+        "image": "iphone17-air-back-cloud-white.png",
+        "heroImage": "iphone17-air-cloud-white.png"
+      },
+      {
+        "name": "Light Gold",
+        "image": "iphone17-air-back-light-gold.png",
+        "heroImage": "iphone17-air-light-gold.png"
+      },
+      {
+        "name": "Sky Blue",
+        "image": "iphone17-air-back-sky-blue.png",
+        "heroImage": "iphone17-air-sky-blue.png"
+      },
+      {
+        "name": "Space Black",
+        "image": "iphone17-air-back-space-black.png",
+        "heroImage": "iphone17-air-space-black.png"
+      }
     ]
   },
   {
@@ -64,9 +120,21 @@
     "ram": 12,
     "storage": 256,
     "storageOptions": [
-      { "ram": 12, "storage": 256, "price": 1099 },
-      { "ram": 12, "storage": 512, "price": 1299 },
-      { "ram": 12, "storage": 1024, "price": 1499 }
+      {
+        "ram": 12,
+        "storage": 256,
+        "price": 1099
+      },
+      {
+        "ram": 12,
+        "storage": 512,
+        "price": 1299
+      },
+      {
+        "ram": 12,
+        "storage": 1024,
+        "price": 1499
+      }
     ],
     "battery": 3700,
     "camera": "48MP + 48MP Tele (8x) + 48MP UW",
@@ -74,9 +142,21 @@
     "category": "flagship",
     "description": "Steps up to a triple-camera system with real telephoto reach and more RAM for heavier multitasking, while keeping the compact 6.3\" body. Available in 12/256GB, 12/512GB, and 12/1TB configurations.",
     "colors": [
-      { "name": "Silver", "image": "iphone17-pro-back-silver.png", "heroImage": "iphone17-pro-silver.png" },
-      { "name": "Deep Navy", "image": "iphone17-pro-back-deep-navy.png", "heroImage": "iphone17-pro-deep-navy.png" },
-      { "name": "Cosmic Orange", "image": "iphone17-pro-back-cosmic-orange.png", "heroImage": "iphone17-pro-cosmic-orange.png" }
+      {
+        "name": "Silver",
+        "image": "iphone17-pro-back-silver.png",
+        "heroImage": "iphone17-pro-silver.png"
+      },
+      {
+        "name": "Deep Navy",
+        "image": "iphone17-pro-back-deep-navy.png",
+        "heroImage": "iphone17-pro-deep-navy.png"
+      },
+      {
+        "name": "Cosmic Orange",
+        "image": "iphone17-pro-back-cosmic-orange.png",
+        "heroImage": "iphone17-pro-cosmic-orange.png"
+      }
     ]
   },
   {
@@ -90,10 +170,26 @@
     "ram": 12,
     "storage": 256,
     "storageOptions": [
-      { "ram": 12, "storage": 256, "price": 1199 },
-      { "ram": 12, "storage": 512, "price": 1399 },
-      { "ram": 12, "storage": 1024, "price": 1599 },
-      { "ram": 12, "storage": 2048, "price": 1999 }
+      {
+        "ram": 12,
+        "storage": 256,
+        "price": 1199
+      },
+      {
+        "ram": 12,
+        "storage": 512,
+        "price": 1399
+      },
+      {
+        "ram": 12,
+        "storage": 1024,
+        "price": 1599
+      },
+      {
+        "ram": 12,
+        "storage": 2048,
+        "price": 1999
+      }
     ],
     "battery": 5088,
     "camera": "48MP + 48MP Tele (8x) + 48MP UW",
@@ -101,9 +197,21 @@
     "category": "flagship",
     "description": "The largest and most capable iPhone, pairing the biggest battery in the lineup with the same pro-grade camera system in a bigger display. Available in 12/256GB, 12/512GB, 12/1TB, and 12/2TB configurations.",
     "colors": [
-      { "name": "Silver", "image": "iphone17-pro-back-silver.png", "heroImage": "iphone17-pro-silver.png" },
-      { "name": "Deep Navy", "image": "iphone17-pro-back-deep-navy.png", "heroImage": "iphone17-pro-deep-navy.png" },
-      { "name": "Cosmic Orange", "image": "iphone17-pro-back-cosmic-orange.png", "heroImage": "iphone17-pro-cosmic-orange.png" }
+      {
+        "name": "Silver",
+        "image": "iphone17-pro-back-silver.png",
+        "heroImage": "iphone17-pro-silver.png"
+      },
+      {
+        "name": "Deep Navy",
+        "image": "iphone17-pro-back-deep-navy.png",
+        "heroImage": "iphone17-pro-deep-navy.png"
+      },
+      {
+        "name": "Cosmic Orange",
+        "image": "iphone17-pro-back-cosmic-orange.png",
+        "heroImage": "iphone17-pro-cosmic-orange.png"
+      }
     ]
   },
   {
@@ -117,21 +225,53 @@
     "ram": 12,
     "storage": 256,
     "storageOptions": [
-      { "ram": 12, "storage": 256, "price": 799 },
-      { "ram": 12, "storage": 512, "price": 899 }
+      {
+        "ram": 12,
+        "storage": 256,
+        "price": 799
+      },
+      {
+        "ram": 12,
+        "storage": 512,
+        "price": 899
+      }
     ],
     "battery": 4300,
     "camera": "50MP + Ultra Wide + Tele",
     "weight": 164,
     "category": "flagship",
-    "description": "Samsung's compact flagship \u2014 a sharp AMOLED display, a versatile triple camera, and flagship-level performance in the smallest S26 body. Available in 12/256GB and 12/512GB configurations.",
+    "description": "Samsung's compact flagship — a sharp AMOLED display, a versatile triple camera, and flagship-level performance in the smallest S26 body. Available in 12/256GB and 12/512GB configurations.",
     "colors": [
-      { "name": "Black", "image": "s26-black-back.png", "heroImage": "s26-black-front-back-side-dark-bg.png" },
-      { "name": "Cobalt Violet", "image": "s26-cobalt-violet-back.png", "heroImage": "s26-cobalt-violet-front-back-side-dark-bg.png" },
-      { "name": "Pink Gold", "image": "s26-pink-gold-back.png", "heroImage": "s26-pink-gold-front-back-side-dark-bg.png" },
-      { "name": "Silver Shadow", "image": "s26-silver-shadow-back.png", "heroImage": "s26-silver-shadow-front-back-side-dark-bg.png" },
-      { "name": "Sky Blue", "image": "s26-sky-blue-back.png", "heroImage": "s26-sky-blue-front-back-side-dark-bg.png" },
-      { "name": "White", "image": "s26-white-back.png", "heroImage": "s26-white-front-back-side-dark-bg.png" }
+      {
+        "name": "Black",
+        "image": "s26-black-back.png",
+        "heroImage": "s26-black-front-back-side-dark-bg.png"
+      },
+      {
+        "name": "Cobalt Violet",
+        "image": "s26-cobalt-violet-back.png",
+        "heroImage": "s26-cobalt-violet-front-back-side-dark-bg.png"
+      },
+      {
+        "name": "Pink Gold",
+        "image": "s26-pink-gold-back.png",
+        "heroImage": "s26-pink-gold-front-back-side-dark-bg.png"
+      },
+      {
+        "name": "Silver Shadow",
+        "image": "s26-silver-shadow-back.png",
+        "heroImage": "s26-silver-shadow-front-back-side-dark-bg.png"
+      },
+      {
+        "name": "Sky Blue",
+        "image": "s26-sky-blue-back.png",
+        "heroImage": "s26-sky-blue-front-back-side-dark-bg.png"
+      },
+      {
+        "name": "White",
+        "image": "s26-white-back.png",
+        "heroImage": "s26-white-front-back-side-dark-bg.png"
+      }
     ]
   },
   {
@@ -145,8 +285,16 @@
     "ram": 12,
     "storage": 256,
     "storageOptions": [
-      { "ram": 12, "storage": 256, "price": 999 },
-      { "ram": 12, "storage": 512, "price": 1099 }
+      {
+        "ram": 12,
+        "storage": 256,
+        "price": 999
+      },
+      {
+        "ram": 12,
+        "storage": 512,
+        "price": 1099
+      }
     ],
     "battery": 4900,
     "camera": "50MP + Ultra Wide + Tele",
@@ -154,12 +302,36 @@
     "category": "flagship",
     "description": "A bigger battery and larger display than the base S26, aimed at people who want more screen and stamina without going full Ultra. Available in 12/256GB and 12/512GB configurations.",
     "colors": [
-      { "name": "Black", "image": "s26-black-back.png", "heroImage": "s26-black-front-back-side-dark-bg.png" },
-      { "name": "Cobalt Violet", "image": "s26-cobalt-violet-back.png", "heroImage": "s26-cobalt-violet-front-back-side-dark-bg.png" },
-      { "name": "Pink Gold", "image": "s26-pink-gold-back.png", "heroImage": "s26-pink-gold-front-back-side-dark-bg.png" },
-      { "name": "Silver Shadow", "image": "s26-silver-shadow-back.png", "heroImage": "s26-silver-shadow-front-back-side-dark-bg.png" },
-      { "name": "Sky Blue", "image": "s26-sky-blue-back.png", "heroImage": "s26-sky-blue-front-back-side-dark-bg.png" },
-      { "name": "White", "image": "s26-white-back.png", "heroImage": "s26-white-front-back-side-dark-bg.png" }
+      {
+        "name": "Black",
+        "image": "s26-black-back.png",
+        "heroImage": "s26-black-front-back-side-dark-bg.png"
+      },
+      {
+        "name": "Cobalt Violet",
+        "image": "s26-cobalt-violet-back.png",
+        "heroImage": "s26-cobalt-violet-front-back-side-dark-bg.png"
+      },
+      {
+        "name": "Pink Gold",
+        "image": "s26-pink-gold-back.png",
+        "heroImage": "s26-pink-gold-front-back-side-dark-bg.png"
+      },
+      {
+        "name": "Silver Shadow",
+        "image": "s26-silver-shadow-back.png",
+        "heroImage": "s26-silver-shadow-front-back-side-dark-bg.png"
+      },
+      {
+        "name": "Sky Blue",
+        "image": "s26-sky-blue-back.png",
+        "heroImage": "s26-sky-blue-front-back-side-dark-bg.png"
+      },
+      {
+        "name": "White",
+        "image": "s26-white-back.png",
+        "heroImage": "s26-white-front-back-side-dark-bg.png"
+      }
     ]
   },
   {
@@ -173,9 +345,21 @@
     "ram": 12,
     "storage": 256,
     "storageOptions": [
-      { "ram": 12, "storage": 256, "price": 1299 },
-      { "ram": 12, "storage": 512, "price": 1499 },
-      { "ram": 16, "storage": 1024, "price": 1799 }
+      {
+        "ram": 12,
+        "storage": 256,
+        "price": 1299
+      },
+      {
+        "ram": 12,
+        "storage": 512,
+        "price": 1499
+      },
+      {
+        "ram": 16,
+        "storage": 1024,
+        "price": 1799
+      }
     ],
     "battery": 5000,
     "camera": "200MP + 50MP UW + 50MP Tele (5x) + 10MP Tele (3x)",
@@ -183,12 +367,36 @@
     "category": "flagship",
     "description": "The top of the range: a huge 200MP camera system with multiple zoom levels, the biggest battery, and the sharpest display Samsung makes. Available in 12/256GB, 12/512GB, and 16/1TB configurations.",
     "colors": [
-      { "name": "Black", "image": "s26-ultra-black-back.png", "heroImage": "s26-ultra-black-front-back-side.png" },
-      { "name": "Cobalt Violet", "image": "s26-ultra-cobalt-violet-back.png", "heroImage": "s26-ultra-cobalt-violet-front-back-side.png" },
-      { "name": "Pink Gold", "image": "s26-ultra-pink-gold-back.png", "heroImage": "s26-ultra-pink-gold-front-back-side.png" },
-      { "name": "Silver Shadow", "image": "s26-ultra-silver-shadow-back.png", "heroImage": "s26-ultra-silver-shadow-front-back-side.png" },
-      { "name": "Sky Blue", "image": "s26-ultra-sky-blue-back.png", "heroImage": "s26-ultra-sky-blue-front-back-side.png" },
-      { "name": "White", "image": "s26-ultra-white-back.png", "heroImage": "s26-ultra-white-front-back-side.png" }
+      {
+        "name": "Black",
+        "image": "s26-ultra-black-back.png",
+        "heroImage": "s26-ultra-black-front-back-side.png"
+      },
+      {
+        "name": "Cobalt Violet",
+        "image": "s26-ultra-cobalt-violet-back.png",
+        "heroImage": "s26-ultra-cobalt-violet-front-back-side.png"
+      },
+      {
+        "name": "Pink Gold",
+        "image": "s26-ultra-pink-gold-back.png",
+        "heroImage": "s26-ultra-pink-gold-front-back-side.png"
+      },
+      {
+        "name": "Silver Shadow",
+        "image": "s26-ultra-silver-shadow-back.png",
+        "heroImage": "s26-ultra-silver-shadow-front-back-side.png"
+      },
+      {
+        "name": "Sky Blue",
+        "image": "s26-ultra-sky-blue-back.png",
+        "heroImage": "s26-ultra-sky-blue-front-back-side.png"
+      },
+      {
+        "name": "White",
+        "image": "s26-ultra-white-back.png",
+        "heroImage": "s26-ultra-white-front-back-side.png"
+      }
     ]
   },
   {
@@ -202,19 +410,43 @@
     "ram": 12,
     "storage": 256,
     "storageOptions": [
-      { "ram": 12, "storage": 256, "price": 799 },
-      { "ram": 12, "storage": 512, "price": 1019 }
+      {
+        "ram": 12,
+        "storage": 256,
+        "price": 799
+      },
+      {
+        "ram": 12,
+        "storage": 512,
+        "price": 1019
+      }
     ],
     "battery": 4985,
     "camera": "48MP + 13MP Ultra Wide",
     "weight": 197,
     "category": "flagship",
-    "description": "The standard Pixel \u2014 Tensor G6 and Gemini-powered camera smarts in a compact 6.3\" body, without the Pro-tier telephoto. Available in 12/256GB and 12/512GB configurations.",
+    "description": "The standard Pixel — Tensor G6 and Gemini-powered camera smarts in a compact 6.3\" body, without the Pro-tier telephoto. Available in 12/256GB and 12/512GB configurations.",
     "colors": [
-      { "name": "Light Fog", "image": "pixel-11-light-fog-back.png", "heroImage": "pixel-11-light-fog-three-view.png" },
-      { "name": "Obsidian", "image": "pixel-11-obsidian-back.png", "heroImage": "pixel-11-obsidian-three-view.png" },
-      { "name": "Olive", "image": "pixel-11-olive-back.png", "heroImage": "pixel-11-olive-three-view.png" },
-      { "name": "Peony", "image": "pixel-11-peony-back.png", "heroImage": "pixel-11-peony-three-view.png" }
+      {
+        "name": "Light Fog",
+        "image": "pixel-11-light-fog-back.png",
+        "heroImage": "pixel-11-light-fog-three-view.png"
+      },
+      {
+        "name": "Obsidian",
+        "image": "pixel-11-obsidian-back.png",
+        "heroImage": "pixel-11-obsidian-three-view.png"
+      },
+      {
+        "name": "Olive",
+        "image": "pixel-11-olive-back.png",
+        "heroImage": "pixel-11-olive-three-view.png"
+      },
+      {
+        "name": "Peony",
+        "image": "pixel-11-peony-back.png",
+        "heroImage": "pixel-11-peony-three-view.png"
+      }
     ]
   },
   {
@@ -228,9 +460,21 @@
     "ram": 12,
     "storage": 256,
     "storageOptions": [
-      { "ram": 12, "storage": 256, "price": 1099 },
-      { "ram": 16, "storage": 512, "price": 1219 },
-      { "ram": 16, "storage": 1024, "price": 1449 }
+      {
+        "ram": 12,
+        "storage": 256,
+        "price": 1099
+      },
+      {
+        "ram": 16,
+        "storage": 512,
+        "price": 1219
+      },
+      {
+        "ram": 16,
+        "storage": 1024,
+        "price": 1449
+      }
     ],
     "battery": 4870,
     "camera": "50MP + 48MP Ultra Wide + 48MP Tele (5x)",
@@ -238,10 +482,26 @@
     "category": "flagship",
     "description": "Same compact 6.3\" size as the base Pixel, but with the full Pro triple-camera system, up to 16GB RAM, and a brighter LTPO display. Available in 12/256GB, 16/512GB, and 16/1TB configurations.",
     "colors": [
-      { "name": "Dune", "image": "pixel-11-pro-dune-back.png", "heroImage": "pixel-11-pro-dune-three-view.png" },
-      { "name": "Light Fog", "image": "pixel-11-pro-light-fog-back.png", "heroImage": "pixel-11-pro-light-fog-three-view.png" },
-      { "name": "Midnight Haze", "image": "pixel-11-pro-midnight-haze-back.png", "heroImage": "pixel-11-pro-midnight-haze-three-view.png" },
-      { "name": "Pine", "image": "pixel-11-pro-pine-back.png", "heroImage": "pixel-11-pro-pine-three-view.png" }
+      {
+        "name": "Dune",
+        "image": "pixel-11-pro-dune-back.png",
+        "heroImage": "pixel-11-pro-dune-three-view.png"
+      },
+      {
+        "name": "Light Fog",
+        "image": "pixel-11-pro-light-fog-back.png",
+        "heroImage": "pixel-11-pro-light-fog-three-view.png"
+      },
+      {
+        "name": "Midnight Haze",
+        "image": "pixel-11-pro-midnight-haze-back.png",
+        "heroImage": "pixel-11-pro-midnight-haze-three-view.png"
+      },
+      {
+        "name": "Pine",
+        "image": "pixel-11-pro-pine-back.png",
+        "heroImage": "pixel-11-pro-pine-three-view.png"
+      }
     ]
   },
   {
@@ -255,20 +515,48 @@
     "ram": 12,
     "storage": 256,
     "storageOptions": [
-      { "ram": 12, "storage": 256, "price": 1299 },
-      { "ram": 16, "storage": 512, "price": 1419 },
-      { "ram": 16, "storage": 1024, "price": 1649 }
+      {
+        "ram": 12,
+        "storage": 256,
+        "price": 1299
+      },
+      {
+        "ram": 16,
+        "storage": 512,
+        "price": 1419
+      },
+      {
+        "ram": 16,
+        "storage": 1024,
+        "price": 1649
+      }
     ],
     "battery": 5115,
     "camera": "50MP + 48MP Ultra Wide + 48MP Tele (5x)",
     "weight": 226,
     "category": "flagship",
-    "description": "The largest Pixel slab \u2014 the same Pro camera system as the Pixel 11 Pro, stretched across a bigger 6.8\" display and a bigger battery. Available in 12/256GB, 16/512GB, and 16/1TB configurations.",
+    "description": "The largest Pixel slab — the same Pro camera system as the Pixel 11 Pro, stretched across a bigger 6.8\" display and a bigger battery. Available in 12/256GB, 16/512GB, and 16/1TB configurations.",
     "colors": [
-      { "name": "Dune", "image": "pixel-11-pro-dune-back.png", "heroImage": "pixel-11-pro-dune-three-view.png" },
-      { "name": "Light Fog", "image": "pixel-11-pro-light-fog-back.png", "heroImage": "pixel-11-pro-light-fog-three-view.png" },
-      { "name": "Midnight Haze", "image": "pixel-11-pro-midnight-haze-back.png", "heroImage": "pixel-11-pro-midnight-haze-three-view.png" },
-      { "name": "Pine", "image": "pixel-11-pro-pine-back.png", "heroImage": "pixel-11-pro-pine-three-view.png" }
+      {
+        "name": "Dune",
+        "image": "pixel-11-pro-dune-back.png",
+        "heroImage": "pixel-11-pro-dune-three-view.png"
+      },
+      {
+        "name": "Light Fog",
+        "image": "pixel-11-pro-light-fog-back.png",
+        "heroImage": "pixel-11-pro-light-fog-three-view.png"
+      },
+      {
+        "name": "Midnight Haze",
+        "image": "pixel-11-pro-midnight-haze-back.png",
+        "heroImage": "pixel-11-pro-midnight-haze-three-view.png"
+      },
+      {
+        "name": "Pine",
+        "image": "pixel-11-pro-pine-back.png",
+        "heroImage": "pixel-11-pro-pine-three-view.png"
+      }
     ]
   },
   {
@@ -282,18 +570,38 @@
     "ram": 16,
     "storage": 256,
     "storageOptions": [
-      { "ram": 16, "storage": 256, "price": 1899 },
-      { "ram": 16, "storage": 512, "price": 2019 },
-      { "ram": 16, "storage": 1024, "price": 2249 }
+      {
+        "ram": 16,
+        "storage": 256,
+        "price": 1899
+      },
+      {
+        "ram": 16,
+        "storage": 512,
+        "price": 2019
+      },
+      {
+        "ram": 16,
+        "storage": 1024,
+        "price": 2249
+      }
     ],
     "battery": 4806,
     "camera": "48MP + 10.5MP Ultra Wide + 10.8MP Tele (5x)",
     "weight": 258,
     "category": "foldable",
-    "description": "Google's foldable flagship \u2014 an 8\" tablet-sized inner display that folds down to pocket size, with the Pro camera system built in. Available in 16/256GB, 16/512GB, and 16/1TB configurations.",
+    "description": "Google's foldable flagship — an 8\" tablet-sized inner display that folds down to pocket size, with the Pro camera system built in. Available in 16/256GB, 16/512GB, and 16/1TB configurations.",
     "colors": [
-      { "name": "Obsidian", "image": "pixel-11-pro-fold-obsidian-back.png", "heroImage": "pixel-11-pro-fold-obsidian-three-view.png" },
-      { "name": "Olive", "image": "pixel-11-pro-fold-olive-back.png", "heroImage": "pixel-11-pro-fold-olive-three-view.png" }
+      {
+        "name": "Obsidian",
+        "image": "pixel-11-pro-fold-obsidian-back.png",
+        "heroImage": "pixel-11-pro-fold-obsidian-three-view.png"
+      },
+      {
+        "name": "Olive",
+        "image": "pixel-11-pro-fold-olive-back.png",
+        "heroImage": "pixel-11-pro-fold-olive-three-view.png"
+      }
     ]
   },
   {
@@ -307,20 +615,208 @@
     "ram": 12,
     "storage": 256,
     "storageOptions": [
-      { "ram": 12, "storage": 256, "price": 1999 },
-      { "ram": 12, "storage": 512, "price": 2199 },
-      { "ram": 16, "storage": 1024, "price": 2499 }
+      {
+        "ram": 12,
+        "storage": 256,
+        "price": 1999
+      },
+      {
+        "ram": 12,
+        "storage": 512,
+        "price": 2199
+      },
+      {
+        "ram": 16,
+        "storage": 1024,
+        "price": 2499
+      }
     ],
     "battery": 4400,
     "camera": "200MP + 12MP Ultra Wide + 10MP Tele (3x)",
     "weight": 215,
     "category": "foldable",
-    "description": "Samsung's flagship foldable \u2014 a large tablet-style inner display paired with a slimmer, more usable cover screen, and a full triple-camera system. Available in 12/256GB, 12/512GB, and 16/1TB configurations.",
+    "description": "Samsung's flagship foldable — a large tablet-style inner display paired with a slimmer, more usable cover screen, and a full triple-camera system. Available in 12/256GB, 12/512GB, and 16/1TB configurations.",
     "colors": [
-      { "name": "Blue Shadow", "image": "z-fold-blue-shadow-single-reference.png", "heroImage": "z-fold-reference-sheet-blue-shadow.png" },
-      { "name": "Jet Black", "image": "z-fold-jet-black-single-reference-corrected.png", "heroImage": "z-fold-reference-sheet-complete-style.png" },
-      { "name": "Mint", "image": "z-fold-mint-single-reference.png", "heroImage": "z-fold-reference-sheet-mint.png" },
-      { "name": "Silver Shadow", "image": "z-fold-silver-shadow-single-reference.png", "heroImage": "z-fold-reference-sheet-silver-shadow.png" }
+      {
+        "name": "Blue Shadow",
+        "image": "z-fold-blue-shadow-single-reference.png",
+        "heroImage": "z-fold-reference-sheet-blue-shadow.png"
+      },
+      {
+        "name": "Jet Black",
+        "image": "z-fold-jet-black-single-reference-corrected.png",
+        "heroImage": "z-fold-reference-sheet-complete-style.png"
+      },
+      {
+        "name": "Mint",
+        "image": "z-fold-mint-single-reference.png",
+        "heroImage": "z-fold-reference-sheet-mint.png"
+      },
+      {
+        "name": "Silver Shadow",
+        "image": "z-fold-silver-shadow-single-reference.png",
+        "heroImage": "z-fold-reference-sheet-silver-shadow.png"
+      }
+    ]
+  },
+  {
+    "id": "iphone-18-pro",
+    "name": "iPhone 18 Pro",
+    "brand": "Apple",
+    "price": 1149,
+    "rating": 4.8,
+    "display": "6.3\" LTPO OLED, 120Hz",
+    "chipset": "Apple A19 Pro",
+    "ram": 12,
+    "storage": 256,
+    "storageOptions": [
+      {
+        "ram": 12,
+        "storage": 256,
+        "price": 1149
+      },
+      {
+        "ram": 12,
+        "storage": 512,
+        "price": 1349
+      },
+      {
+        "ram": 12,
+        "storage": 1024,
+        "price": 1549
+      }
+    ],
+    "battery": 3800,
+    "camera": "48MP + 48MP Tele (8x) + 48MP UW",
+    "weight": 210,
+    "category": "flagship",
+    "description": "The next-gen Pro — an adaptive LTPO display, refined triple-camera system, and the same compact 6.3\" body as its predecessor. Available in 12/256GB, 12/512GB, and 12/1TB configurations.",
+    "colors": [
+      {
+        "name": "Black",
+        "image": "iphone18-pro-back-black.png",
+        "heroImage": "iphone18-pro-black.png"
+      },
+      {
+        "name": "Burgundy",
+        "image": "iphone18-pro-back-burgundy.png",
+        "heroImage": "iphone18-pro-burgundy.png"
+      },
+      {
+        "name": "Glacier",
+        "image": "iphone18-pro-back-glacier.png",
+        "heroImage": "iphone18-pro-glacier.png"
+      },
+      {
+        "name": "Silver",
+        "image": "iphone18-pro-back-silver.png",
+        "heroImage": "iphone18-pro-silver.png"
+      }
+    ]
+  },
+  {
+    "id": "iphone-18-pro-max",
+    "name": "iPhone 18 Pro Max",
+    "brand": "Apple",
+    "price": 1249,
+    "rating": 4.9,
+    "display": "6.9\" LTPO OLED, 120Hz",
+    "chipset": "Apple A19 Pro",
+    "ram": 12,
+    "storage": 256,
+    "storageOptions": [
+      {
+        "ram": 12,
+        "storage": 256,
+        "price": 1249
+      },
+      {
+        "ram": 12,
+        "storage": 512,
+        "price": 1449
+      },
+      {
+        "ram": 12,
+        "storage": 1024,
+        "price": 1649
+      },
+      {
+        "ram": 12,
+        "storage": 2048,
+        "price": 2049
+      }
+    ],
+    "battery": 5200,
+    "camera": "48MP + 48MP Tele (8x) + 48MP UW",
+    "weight": 238,
+    "category": "flagship",
+    "description": "The largest Pro yet, pairing the biggest battery Apple has shipped in an iPhone with the full Pro camera system on an adaptive LTPO display. Available in 12/256GB, 12/512GB, 12/1TB, and 12/2TB configurations.",
+    "colors": [
+      {
+        "name": "Black",
+        "image": "iphone18-pro-back-black.png",
+        "heroImage": "iphone18-pro-black.png"
+      },
+      {
+        "name": "Burgundy",
+        "image": "iphone18-pro-back-burgundy.png",
+        "heroImage": "iphone18-pro-burgundy.png"
+      },
+      {
+        "name": "Glacier",
+        "image": "iphone18-pro-back-glacier.png",
+        "heroImage": "iphone18-pro-glacier.png"
+      },
+      {
+        "name": "Silver",
+        "image": "iphone18-pro-back-silver.png",
+        "heroImage": "iphone18-pro-silver.png"
+      }
+    ]
+  },
+  {
+    "id": "iphone-duo",
+    "name": "iPhone Duo",
+    "brand": "Apple",
+    "price": 2199,
+    "rating": 4.7,
+    "display": "7.8\" foldable OLED + 6.2\" cover display, 120Hz",
+    "chipset": "Apple A19 Pro",
+    "ram": 16,
+    "storage": 256,
+    "storageOptions": [
+      {
+        "ram": 16,
+        "storage": 256,
+        "price": 2199
+      },
+      {
+        "ram": 16,
+        "storage": 512,
+        "price": 2399
+      },
+      {
+        "ram": 16,
+        "storage": 1024,
+        "price": 2599
+      }
+    ],
+    "battery": 4200,
+    "camera": "48MP + 48MP UW",
+    "weight": 232,
+    "category": "foldable",
+    "description": "Apple's first foldable — a book-style design that opens into a 7.8\" tablet-sized display and closes down to a compact cover screen, powered by the same A19 Pro silicon as the Pro line. Available in 16/256GB, 16/512GB, and 16/1TB configurations.",
+    "colors": [
+      {
+        "name": "Night Sky",
+        "image": "iphone-duo-back-night-sky.png",
+        "heroImage": "iphone-duo-night-sky.png"
+      },
+      {
+        "name": "Star White",
+        "image": "iphone-duo-back-star-white.png",
+        "heroImage": "iphone-duo-star-white.png"
+      }
     ]
   }
 ]
