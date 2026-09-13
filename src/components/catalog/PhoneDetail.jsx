@@ -20,6 +20,7 @@ const SPECS = [
   { key: "camera", label: "Main Camera" },
   { key: "weight", label: "Weight", suffix: "g" },
   { key: "category", label: "Category" },
+  { key: "releaseDate", label: "Release Date" },
 ];
 
 function PhoneDetail({ phone, onBack, onImageClick }) {
