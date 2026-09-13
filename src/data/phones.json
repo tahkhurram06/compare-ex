@@ -163,6 +163,52 @@
     "releaseDate": "September 18, 2026"
   },
   {
+    "id": "galaxy-s26-fe",
+    "name": "Galaxy S26 FE",
+    "brand": "Samsung",
+    "price": 699,
+    "rating": 4.4,
+    "display": "6.7\" Dynamic AMOLED 2X, 120Hz",
+    "chipset": "Exynos 2500",
+    "ram": 8,
+    "storage": 128,
+    "storageOptions": [
+      {
+        "ram": 8,
+        "storage": 128,
+        "price": 699
+      },
+      {
+        "ram": 8,
+        "storage": 256,
+        "price": 799
+      }
+    ],
+    "battery": 4900,
+    "camera": "50MP + 12MP UW + 8MP Tele (3x)",
+    "weight": 193,
+    "category": "flagship",
+    "releaseDate": "August 27, 2026",
+    "description": "The Fan Edition brings Samsung's most-requested flagship features — a fast Exynos 2500 chip, a versatile triple-camera system with 3x optical zoom, and a big 4,900mAh battery — down to a more attainable price. Available in 8/128GB and 8/256GB configurations. Released August 27, 2026.",
+    "colors": [
+      {
+        "name": "Blueberry",
+        "image": "s26-FE-blueberry.jpeg",
+        "heroImage": "s26-FE-blueberry-all-views.jpeg"
+      },
+      {
+        "name": "Graphite",
+        "image": "s26-FE-graphite.jpeg",
+        "heroImage": "s26-FE-graphite-all-views.jpeg"
+      },
+      {
+        "name": "Pistachio",
+        "image": "s26-FE-Pistachio.jpeg",
+        "heroImage": "s26-FE-pistachio-all-views.jpeg"
+      }
+    ]
+  },
+  {
     "id": "pixel-11-pro-fold",
     "name": "Pixel 11 Pro Fold",
     "brand": "Google",
@@ -370,6 +416,113 @@
       }
     ],
     "releaseDate": "August 20, 2026"
+  },
+  {
+    "id": "z-fold-8",
+    "name": "Galaxy Z Fold 8",
+    "brand": "Samsung",
+    "price": 1899,
+    "rating": 4.7,
+    "display": "8\" foldable Dynamic AMOLED 2X + 6.5\" cover display, 120Hz",
+    "chipset": "Snapdragon 8 Elite Gen 5 / Exynos 2600",
+    "ram": 12,
+    "storage": 256,
+    "storageOptions": [
+      {
+        "ram": 12,
+        "storage": 256,
+        "price": 1899
+      },
+      {
+        "ram": 12,
+        "storage": 512,
+        "price": 2019
+      },
+      {
+        "ram": 16,
+        "storage": 1024,
+        "price": 2259
+      }
+    ],
+    "battery": 4400,
+    "camera": "50MP + 12MP UW",
+    "weight": 236,
+    "category": "foldable",
+    "releaseDate": "August 7, 2026",
+    "description": "The standard Z Fold 8 refines Samsung's book-style foldable with a slimmer hinge and a dual-camera system on the back. Available in 12/256GB, 12/512GB, and 16/1TB configurations. Released August 7, 2026.",
+    "colors": [
+      {
+        "name": "Graphite",
+        "image": "fold8-graphite.png",
+        "heroImage": "clear-device-composite.png"
+      },
+      {
+        "name": "Cream",
+        "image": "fold8-cream.png",
+        "heroImage": "cream-four-view-device.png"
+      },
+      {
+        "name": "Lavender",
+        "image": "fold8-lavender.png",
+        "heroImage": "lavender-four-view-device.png"
+      },
+      {
+        "name": "Pistachio",
+        "image": "fold8-pistachio.png",
+        "heroImage": "mint-green-four-view-device.png"
+      }
+    ]
+  },
+  {
+    "id": "z-fold-8-ultra",
+    "name": "Galaxy Z Fold 8 Ultra",
+    "brand": "Samsung",
+    "price": 2199,
+    "rating": 4.8,
+    "display": "8.2\" foldable Dynamic LTPO AMOLED 2X + 6.5\" cover display, 120Hz",
+    "chipset": "Snapdragon 8 Elite Gen 5 / Exynos 2600",
+    "ram": 16,
+    "storage": 512,
+    "storageOptions": [
+      {
+        "ram": 16,
+        "storage": 512,
+        "price": 2199
+      },
+      {
+        "ram": 16,
+        "storage": 1024,
+        "price": 2419
+      }
+    ],
+    "battery": 4800,
+    "camera": "200MP + 50MP Tele (3x) + 12MP UW",
+    "weight": 249,
+    "category": "foldable",
+    "releaseDate": "August 7, 2026",
+    "description": "Samsung's largest and most capable dual-fold, pairing a 200MP triple-camera system with the biggest battery of any Z Fold to date. Available in 16/512GB and 16/1TB configurations. Released August 7, 2026.",
+    "colors": [
+      {
+        "name": "Graphite",
+        "image": "fold8-ultra1.jpeg",
+        "heroImage": "phone-four-views-grid.png"
+      },
+      {
+        "name": "Cream",
+        "image": "fold8-ultra2.jpeg",
+        "heroImage": "phone-four-views-white.png"
+      },
+      {
+        "name": "Violet Shadow",
+        "image": "fold8-ultra3.jpeg",
+        "heroImage": "phone-clarified-v2.png"
+      },
+      {
+        "name": "Green Shadow",
+        "image": "fold8-ultra4.jpeg",
+        "heroImage": "phone-four-views-green.png"
+      }
+    ]
   },
   {
     "id": "galaxy-s26-ultra",
