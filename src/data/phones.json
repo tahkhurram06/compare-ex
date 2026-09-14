@@ -571,6 +571,154 @@
     ]
   },
   {
+    "id": "nothing-phone-4b",
+    "name": "Nothing Phone (4b)",
+    "brand": "Nothing",
+    "price": 349,
+    "rating": 4.4,
+    "display": "6.77\" AMOLED, 120Hz",
+    "chipset": "Snapdragon 6 Gen 4",
+    "ram": 8,
+    "storage": 128,
+    "storageOptions": [
+      {
+        "ram": 8,
+        "storage": 128,
+        "price": 349
+      },
+      {
+        "ram": 8,
+        "storage": 256,
+        "price": 399
+      }
+    ],
+    "battery": 5200,
+    "camera": "50MP + 8MP Ultra Wide",
+    "weight": 210,
+    "category": "budget",
+    "releaseDate": "July 7, 2026",
+    "description": "Nothing's first budget-focused B-series phone, trading some of the (4a)'s transparency for a lower price while keeping the Glyph Bar lighting. Available in 8/128GB and 8/256GB configurations. Released July 7, 2026.",
+    "colors": [
+      {
+        "name": "Black",
+        "image": "nothing-4b-back.jpeg",
+        "heroImage": "nothing-4b-black-all-views.jpeg"
+      },
+      {
+        "name": "White",
+        "image": "nothing-4b-white.jpeg",
+        "heroImage": "nothing-4b-white-all-views.jpeg"
+      },
+      {
+        "name": "Blue",
+        "image": "nothing-4b-blue.jpeg",
+        "heroImage": "nothing-4b-blue-all-views.jpeg"
+      }
+    ]
+  },
+  {
+    "id": "nothing-phone-4a-pro",
+    "name": "Nothing Phone (4a) Pro",
+    "brand": "Nothing",
+    "price": 499,
+    "rating": 4.6,
+    "display": "6.8\" AMOLED, 144Hz",
+    "chipset": "Snapdragon 7 Gen 4",
+    "ram": 8,
+    "storage": 128,
+    "storageOptions": [
+      {
+        "ram": 8,
+        "storage": 128,
+        "price": 499
+      },
+      {
+        "ram": 12,
+        "storage": 256,
+        "price": 599
+      }
+    ],
+    "battery": 5088,
+    "camera": "50MP OIS + 50MP Periscope Tele + 50MP Ultra Wide",
+    "weight": 210,
+    "category": "mid-range",
+    "releaseDate": "March 27, 2026",
+    "description": "The step-up Nothing Phone, with an aluminum body, the Glyph Matrix display, and a periscope telephoto camera for long-range zoom. Available in 8/128GB and 12/256GB configurations. Released March 27, 2026.",
+    "colors": [
+      {
+        "name": "Black",
+        "image": "nothing-4a-pro-black.jpeg",
+        "heroImage": "nothing-4a-pro-black-all-views.jpeg"
+      },
+      {
+        "name": "Pink",
+        "image": "nothing-4a-pro-pink.jpeg",
+        "heroImage": "nothing-4a-pro-pink-all-views.jpeg"
+      },
+      {
+        "name": "Silver",
+        "image": "nothing-4a-pro-silver.jpeg",
+        "heroImage": "nothing-4a-pro-silver-all-views.jpeg"
+      }
+    ]
+  },
+  {
+    "id": "nothing-phone-4a",
+    "name": "Nothing Phone (4a)",
+    "brand": "Nothing",
+    "price": 399,
+    "rating": 4.5,
+    "display": "6.8\" AMOLED, 120Hz",
+    "chipset": "Snapdragon 7s Gen 4",
+    "ram": 8,
+    "storage": 128,
+    "storageOptions": [
+      {
+        "ram": 8,
+        "storage": 128,
+        "price": 399
+      },
+      {
+        "ram": 8,
+        "storage": 256,
+        "price": 439
+      },
+      {
+        "ram": 12,
+        "storage": 256,
+        "price": 479
+      }
+    ],
+    "battery": 5080,
+    "camera": "50MP + 50MP + 8MP Ultra Wide",
+    "weight": 205,
+    "category": "mid-range",
+    "releaseDate": "March 13, 2026",
+    "description": "Nothing's mid-range refresh, with a transparent unibody design, the signature Glyph light interface, and a triple 50MP camera system. Available in 8/128GB, 8/256GB, and 12/256GB configurations. Released March 13, 2026.",
+    "colors": [
+      {
+        "name": "White",
+        "image": "nothing-4a-white.jpeg",
+        "heroImage": "nothing-4a-white-all-views.jpeg"
+      },
+      {
+        "name": "Blue",
+        "image": "nothing-4a-blue.jpeg",
+        "heroImage": "nothing-4a-blue-all-views.jpeg"
+      },
+      {
+        "name": "Pink",
+        "image": "nothing-4a-pink.jpeg",
+        "heroImage": "nothing-4a-pink-all-views.jpeg"
+      },
+      {
+        "name": "Black",
+        "image": "nothing-4a-black.jpeg",
+        "heroImage": "nothing-4a-black-all-views.jpeg"
+      }
+    ]
+  },
+  {
     "id": "galaxy-s26-ultra",
     "name": "Galaxy S26 Ultra",
     "brand": "Samsung",
@@ -1114,5 +1262,235 @@
       }
     ],
     "releaseDate": "July 25, 2025"
+  },
+  {
+    "id": "cmf-phone-2-pro",
+    "name": "CMF Phone 2 Pro",
+    "brand": "Nothing",
+    "price": 279,
+    "rating": 4.2,
+    "display": "6.77\" AMOLED, 120Hz",
+    "chipset": "Dimensity 7300 Pro",
+    "ram": 8,
+    "storage": 128,
+    "storageOptions": [
+      {
+        "ram": 8,
+        "storage": 128,
+        "price": 219
+      },
+      {
+        "ram": 8,
+        "storage": 256,
+        "price": 279
+      }
+    ],
+    "battery": 5000,
+    "camera": "50MP + 50MP Tele (2x) + 8MP UW",
+    "weight": 185,
+    "category": "budget",
+    "description": "CMF by Nothing's budget standout — a triple-camera system with a rare 2x optical telephoto at this price, a big 5,000mAh battery, and the brand's signature exposed-screw design in a more durable, IP54-rated build. Available in 8/128GB and 8/256GB configurations. Released May 6, 2025.",
+    "colors": [
+      {
+        "name": "Black",
+        "image": "cmf-black.jpeg",
+        "heroImage": "cmf-black-all-views.jpeg"
+      },
+      {
+        "name": "Light Green",
+        "image": "cmf-light-green.jpeg",
+        "heroImage": "cmf-light-green-all-views.jpeg"
+      },
+      {
+        "name": "Orange",
+        "image": "cmf-orange.jpeg",
+        "heroImage": "cmf-orange-all-views.jpeg"
+      },
+      {
+        "name": "White",
+        "image": "cmf-white.jpeg",
+        "heroImage": "cmf-white-all-views.jpeg"
+      }
+    ],
+    "releaseDate": "May 6, 2025"
+  },
+  {
+    "id": "nothing-phone-3",
+    "name": "Nothing Phone (3)",
+    "brand": "Nothing",
+    "price": 799,
+    "rating": 4.5,
+    "display": "6.67\" LTPO AMOLED, 120Hz",
+    "chipset": "Snapdragon 8s Gen 4",
+    "ram": 12,
+    "storage": 256,
+    "storageOptions": [
+      {
+        "ram": 12,
+        "storage": 256,
+        "price": 799
+      },
+      {
+        "ram": 16,
+        "storage": 512,
+        "price": 899
+      }
+    ],
+    "battery": 5150,
+    "camera": "50MP OIS + 50MP Periscope Tele (3x) + 50MP Ultra Wide",
+    "weight": 218,
+    "category": "flagship",
+    "releaseDate": "July 15, 2025",
+    "description": "Nothing's first true flagship — a glass-and-metal unibody with a customizable Glyph Matrix LED display on the back, a genuine triple-camera system with periscope zoom, and top-tier Snapdragon silicon. Available in 12/256GB and 16/512GB configurations. Released July 15, 2025.",
+    "colors": [
+      {
+        "name": "Black",
+        "image": "nothing-3-black.jpeg",
+        "heroImage": "nothing-3-black-all-views.jpeg"
+      },
+      {
+        "name": "White",
+        "image": "nothing-3-white.jpeg",
+        "heroImage": "nothing-3-white-all-views.jpeg"
+      }
+    ]
+  },
+  {
+    "id": "nothing-phone-3a",
+    "name": "Nothing Phone (3a)",
+    "brand": "Nothing",
+    "price": 379,
+    "rating": 4.5,
+    "display": "6.77\" AMOLED, 120Hz",
+    "chipset": "Snapdragon 7s Gen 4",
+    "ram": 8,
+    "storage": 128,
+    "storageOptions": [
+      {
+        "ram": 8,
+        "storage": 128,
+        "price": 379
+      },
+      {
+        "ram": 8,
+        "storage": 256,
+        "price": 409
+      },
+      {
+        "ram": 12,
+        "storage": 256,
+        "price": 439
+      }
+    ],
+    "battery": 5000,
+    "camera": "50MP OIS + 50MP Periscope Tele (2x) + 8MP Ultra Wide",
+    "weight": 201,
+    "category": "mid-range",
+    "releaseDate": "March 11, 2025",
+    "description": "The mid-range Nothing Phone with genuine periscope zoom at a budget price, wrapped in the brand's signature transparent design language with Glyph lighting. Available in 8/128GB, 8/256GB, and 12/256GB configurations. Released March 11, 2025.",
+    "colors": [
+      {
+        "name": "Blue",
+        "image": "nothing-3a-blue.jpeg",
+        "heroImage": "nothing-3a-blue-all-views.jpeg"
+      },
+      {
+        "name": "Green",
+        "image": "nothing-3a-green.jpeg",
+        "heroImage": "nothing-3a-green-all-views.jpeg"
+      },
+      {
+        "name": "White",
+        "image": "nothing-3a-white.jpeg",
+        "heroImage": "nothing-3a-white-all-views.jpeg"
+      }
+    ]
+  },
+  {
+    "id": "nothing-phone-3a-pro",
+    "name": "Nothing Phone (3a) Pro",
+    "brand": "Nothing",
+    "price": 459,
+    "rating": 4.6,
+    "display": "6.77\" AMOLED, 120Hz",
+    "chipset": "Snapdragon 7s Gen 4",
+    "ram": 8,
+    "storage": 128,
+    "storageOptions": [
+      {
+        "ram": 8,
+        "storage": 128,
+        "price": 459
+      },
+      {
+        "ram": 12,
+        "storage": 256,
+        "price": 499
+      }
+    ],
+    "battery": 5000,
+    "camera": "50MP OIS + 50MP Periscope Tele (3x) + 8MP Ultra Wide",
+    "weight": 211,
+    "category": "mid-range",
+    "releaseDate": "March 11, 2025",
+    "description": "Steps up from the (3a) with a larger camera housing built around a 50MP periscope module for longer optical zoom, plus a dedicated Essential Key. Available in 8/128GB and 12/256GB configurations. Released March 11, 2025.",
+    "colors": [
+      {
+        "name": "Black",
+        "image": "nothing-3a-pro-black.jpeg",
+        "heroImage": "nothing-3a-pro-black-all-views.jpeg"
+      },
+      {
+        "name": "Grey",
+        "image": "nothing-3a-pro-grey.jpeg",
+        "heroImage": "nothing-3a-pro-grey-all-views.jpeg"
+      }
+    ]
+  },
+  {
+    "id": "nothing-phone-3a-lite",
+    "name": "Nothing Phone (3a) Lite",
+    "brand": "Nothing",
+    "price": 229,
+    "rating": 4.2,
+    "display": "6.77\" AMOLED, 120Hz",
+    "chipset": "Snapdragon 6 Gen 4",
+    "ram": 8,
+    "storage": 128,
+    "storageOptions": [
+      {
+        "ram": 8,
+        "storage": 128,
+        "price": 229
+      },
+      {
+        "ram": 8,
+        "storage": 256,
+        "price": 259
+      }
+    ],
+    "battery": 5000,
+    "camera": "50MP + 8MP Ultra Wide",
+    "weight": 195,
+    "category": "budget",
+    "releaseDate": "August 19, 2025",
+    "description": "The most affordable Nothing Phone, keeping the transparent design and Glyph lighting while simplifying the camera system to a straightforward dual setup. Available in 8/128GB and 8/256GB configurations. Released August 19, 2025.",
+    "colors": [
+      {
+        "name": "Black",
+        "image": "nothing-3a-lite-black.jpeg",
+        "heroImage": "nothing-3a-lite-black-all-views.jpeg"
+      },
+      {
+        "name": "Blue",
+        "image": "nothing-3a-lite-blue.jpeg",
+        "heroImage": "nothing-3a-lite-blue-all-views.jpeg"
+      },
+      {
+        "name": "White",
+        "image": "nothing-3a-lite-white.jpeg",
+        "heroImage": "nothing-3a-lite-white-all-views.jpeg"
+      }
+    ]
   }
 ]
